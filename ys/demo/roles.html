@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/roles.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/roles.js"></script>
+    <script src="../js/index.js"></script>
+    <link rel="shortcut icon" href="../images/bitbug_favicon.ico" type="image/x-icon">
+    <title>角色介绍</title>
+</head>
+<body>
+
+ <!-- 顶部导航栏 -->
+ <div id="nav">
+    <div class="navLeft">
+        <div class="logo">
+            <img src="../images/index/music-off.png" alt="">
+            <audio autoplay loop class="music">
+                <source src="../media/bgmusic.mp3">
+              您的浏览器不支持 audio 元素。
+              </audio>
+        </div>
+        <div class="navList">
+            <a href="../index.html">首 页</a>
+            <a href="./news.html">新 闻</a>
+            <a href="./roles.html" class="line sy">角 色</a>
+            <a href="#">世 界</a>
+            <a href="#">漫 画</a>
+            <a href="#">社 区</a>
+        </div>
+    </div>
+
+    <div class="navRight">
+        <a href="#">
+            <span>成长关爱系统</span>
+            <img src="../images/index/ax.png" alt="">
+        </a>
+        <a href="javascript:void()" class="dlys">
+            <span>登录</span>
+            <img src="../images/index/user.png" alt="">
+        </a>
+    </div>
+</div>
+
+<!-- 登录 -->
+<div id="loginStorage">
+    <div class="box">
+        <img src="images/index/login.png" alt="">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAADB0lEQVRYR8XZSXLTQBQG4P9lBRQnSFFcQ7JkkHwTQhKmAAEWkHkeYAcEwjyuqOIQlqssW+YCsKUqrNiwgV38KLnsRGl3Sy3Jlr20WurP/2t1t2Sq+d8uMtr7AJ1i8FLFNr9ghJ9aI5hlxiaA34SxCfL84BeA8a6JmflKpVx6OwqjVw9WQFiP9P0jBP4FcCbyJQN81bVLb4pESnBh9wdUbQRzxNgVMIUiFTgmpgkKYVW/tUXgxVEga35rlcFrYt9EuOZY5usOMPzU/GCTgSVVw2GUOwkX9nkELBqpg+sDFoWs+s01Aq3qVOtEgkWUW4VTzRxSYAj16sEGCMv9v5KuO5bxKsuY9BrBOhgraW5GJXDQyCw46RgUk1ElyUw3KmXjpU6SKpzOqhWbYK9zdQfJyDw4rQTzINXp66/3WglmQSpvMqZpp2y80xkaqRJMQgI849qlF7E3V0pcJmB4UsxcNkOgcemSmQGXGRiDlFWOiTDlWOZ73bJG26Uag2IHiiSjzXLhciV4vCxKt0vh4dy4gQAVe8kOEMBN1zb3s5S2d07OEks3umKJbzmW+TwrMjPQ85vbAC0IHbcBjImbASJkRmYCqnBEmOY2zglPZp1yM9PtStl4ljbJ1MCY5KZc2/zQnajFx8fMyFRArxHsgDEvKesRLrLiLIOxIZY7bZLawDS4QSK1gArcIYDpXllVY8trBNIkAZ517dJe0phMBNbqwS4T5oQLaeF651T95hKBwvctJ6YgHWQscBA4DeQd1y49VSWpBA4Slwcpf+xUlJXBUxW79DFp3MQdjym3NMk+YNVvPSTwA3HMDQJ3vMFoLjJoSzIm+5AngEXgkpBEuOtY5pO+zYLnNx8BdF9MjpgmnbLxKU9ZVefWfHmSUWQnwVHgjibzemsBxNt9Kw7hXsUyH5NiIj0cZnJiop4CCWAyfAX8D8DpyEmF4hKSPCDPb/4E6Hy34SERXXYs4/MwxlzSNb16MA/CTqTdd/LqrQsg3gPoLAjzrmV8TbrQMI93/4YIXwn/aVP70n+OfBhghPU19QAAAABJRU5ErkJggg==" class="close-icon">
+        <div class="login_info">
+            <input type="text" id="user" placeholder="手机号注册、登录" style="margin-top: 20px;">
+            <span class="ts1"></span>
+            <input type="password" id="passward" placeholder="密码">
+            <span class="ts1"></span>
+            <input type="submit" name="" id="dl" value="登录">
+            <p style="margin-top: 20px;display: flex;justify-content: space-between;">
+                <span style="color: #7f858a;cursor: pointer;">登录遇到问题？</span>
+                <span style="color: #7f858a;cursor: pointer;">立即注册</span>
+            </p>
+            <span class="ts1" style="margin-top: 20px;display: inline-block;">
+                未注册的手机验证后将自动登录。注册/登录即代表您同意并遵守
+                <i style="color: #7f858a; cursor: pointer;">
+                    《米哈游通行证用户服务协议》                    
+                </i> 
+                <i style="color: #7f858a; cursor: pointer;">
+                    《米哈游通行证用户个人信息及隐私保护政策》
+                </i> 
+            </span>
+           
+        </div>
+    </div>
+</div>
+
+
+    <!-- 侧边导航条 -->
+    <div id="content">
+        <div class="bg bg1"></div>
+        <div class="bg bg2"></div>
+        <ul class="character__sidebar">
+            <li class="character__city character__city_active">
+                <a href="#" class="nuxt-link-active">
+                    蒙德城
+                </a>
+            </li>
+            <li class="character__city">
+                <a href="#" class="">
+                    璃月港
+                </a>
+            </li>
+            <li class="character__city">
+                <a href="#" class="">
+                    稻妻城
+                </a>
+            </li>
+            <li class="character__city">
+                <a href="#" class="">
+                    须弥城
+                </a>
+            </li>
+            <li class="character__city character__city--disable">敬请期待</li>
+        </ul>
+    </div>
+
+    <!-- 角色展示 -->
+    <div id="roles">
+        <ul>
+            <li>
+                <img src="https://webstatic.mihoyo.com/upload/contentweb/2022/06/30/b51565c6f1298e534e90b6e63332e9c1_6618231443033589469.png" class="role_img">
+                <img src="https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620142687125.png" class="sx_img">
+                <div class="txt">
+                    <img src="https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620142281505.png" class="r_name">
+                    <div class="cv">
+                        <div class="cv_name">
+                            <div>
+                                <p class="cv_txt">CV: 林簌</p>
+                                <p class="cv_txt notin">CV: 斋藤千和</p>
+                                
+                            </div>
+                        </div>
+                        <div class="voice "></div>
+                        <div class="voice voice_in voice_play"></div>
+                        <div class="area">
+                            <div class="area_info">
+                                <p class="zh area_active">中</p>
+                                <p class="jp">日</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r_info">
+                        <div class="r_msg">
+                            <p>身为西风骑士团的代理团长，琴一直忠于职守，为人们带来安宁。虽然并非天赋异禀，但通过刻苦训练，如今的她已然能够独当一面。<br>
+                                当风魔龙的威胁开始临近，这位可靠的代理团长早已做好了准备，誓要守护蒙德。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <img src="https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620144979413.png" class="info_img"> -->
+                </div>
+            
+            
+            </li>
+        </ul>
+    </div>
+    <!-- 角色语音 -->
+    <div id="audio">
+        <audio class="v_zh v_in" src="https://webstatic.mihayo.com/upload/op-public/2019/12/11/209a68a166b14b27e11a8b64c466ea7c_7021182076965695539.mp3"></audio>
+        <audio class="v_jp" src="https://uploadstatic.mihoyo.com/contentweb/20190926/2019092620145220378.mp3" ></audio>
+        
+    </div>
+    <!-- 角色列表 -->
+    <div id="rolesList">
+        <div class="r_list">
+            <ul>
+                <li class="r_list--active">
+                    <img src="https://uploadstatic.mihoyo.com/contentweb/20220127/2022012718344593599.png" class="r_list--img">
+                    <p class="r_name">琴</p>
+                </li>
+                <li>
+                    <img src="https://uploadstatic.mihoyo.com/contentweb/20220127/2022012718350213870.png" class="r_list--img">
+                    <p>安柏</p>
+                </li>
+                <li>
+                    <img src="https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617000181697.png" class="r_list--img">
+                    <p>丽莎</p>
+                </li>
+                <li>
+                    <img src="https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617001674227.png" class="r_list--img">
+                    <p>凯亚</p>
+                </li>
+                <li>
+                    <img src="https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617005720579.png" class="r_list--img">
+                    <p>芭芭拉</p>
+                </li>
+                <li>
+                    <img src="https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617015669833.png" class="r_list--img">
+                    <p>迪卢克</p>
+                </li>
+                <li>
+                    <img src="https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617025961375.png" class="r_list--img">
+                    <p>雷泽</p>
+                </li>
+                <li>
+                    <img src="https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617031747812.png" class="r_list--img">
+                    <p>温迪</p>
+                </li>
+                <li>
+                    <img src="https://uploadstatic.mihoyo.com/contentweb/20200306/2020030617033181769.png" class="r_list--img">
+                    <p>可莉</p>
+                </li>
+            </ul>
+        </div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+       <!-- 底部信息栏 -->
+       <div id="footer">
+        <div class="content">
+            <div class="footer-logo">
+                <div class="logoImg">
+                    <img src="../images/index/footer1.png" alt="" class="left">
+                    <span></span>
+                    <img src="../images/index/footer2.png" alt="" class="rigth">
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="footer-link">
+                    <div class="footer-protocol">
+                        <div>
+                            <a href="#">用户协议</a><span>|</span>
+                            <a href="#">隐私政策</a><span>|</span>
+                            <a href="#">儿童隐私政策</a><span>|</span>
+                            <a href="#">自律公约</a><span>|</span>
+                            <a href="#">成长关爱</a><span>|</span>
+                            <a href="#">关于我们</a><span>|</span>
+                            <a href="#">联系我们</a><span>|</span>
+                            <a href="#">加入我们</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-advice">                
+                    <p>
+                        健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+                    </p>                
+                    <p>
+                        <a href="#">沪公网安备31010402001113号</a>
+                        <span>|</span>
+                        <span>增值电信业务经营许可证：沪B2-20190555</span>
+                    </p>
+                    <p>
+                        <a href="#">沪ICP备19018275号-4</a>
+                        <span>|</span>
+                        <a href="#">沪网文〔2022〕1334-052号</a>
+                        <span>|</span>
+                        <a href="#">国新出审【2019】2978号</a>
+                    </p>
+                    <p>
+                        互联网违法不良信息举报邮箱: tousu@service.mihoyo.com 互联网违法不良信息举报电话: 021-60371750 （工作时间：每天10点 - 20点）
+                    </p>
+                    <p>
+                        亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听
+                    </p>
+                    <p>
+                        未成年成长关爱热线：021-60371740 （服务时间：8:00-23:00）
+                    </p>
+                    <p>
+                        <i>© 2020 米哈游版权所有 | 上海米哈游影铁科技有限公司</i>
+                        <span>客服电话：400-666-6312</span>
+                    </p>
+                </div>  
+                <div class="footer-icon">
+                    <a href="#"
+                        style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/shiming_1575020038_4113.png');">
+                    </a>
+                    <a href="#"
+                        style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/jubao_1575020039_5071.png');">
+                    </a>
+                    <a href='#'
+                        style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/202005/youhai_1589857356_1416.png');">
+                    </a>
+                    <a href="#"
+                        
+                        style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/culture_1575020039_5478.png');">
+                    </a>
+                    <a href="#"
+                        style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/e110_1575020039_7486.png');">
+                    </a>
+                    <a
+                        href="#"
+                        style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/zhizhao_1575020039_4362.png');"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="down"></div>
+</body>
+</html>

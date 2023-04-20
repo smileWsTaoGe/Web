@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原神新闻</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../data.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/news.js"></script>
+</head>
+
+<body>
+    <div id="nav">
+        <div class="navLeft">
+            <div class="logo">
+                <img src="../images/index/music-off.png" alt="">
+                <audio autoplay loop class="music">
+                    <source src="../media/bgmusic.mp3">
+                  您的浏览器不支持 audio 元素。
+                  </audio>
+            </div>
+            <div class="navList">
+                <a href="../index.html">首 页</a>
+                <a href="./news.html" class="line sy">新 闻</a>
+                <a href="./roles.html">角 色</a>
+                <a href="#">世 界</a>
+                <a href="#">漫 画</a>
+                <a href="#">社 区</a>
+            </div>
+        </div>
+
+        <div class="navRight">
+            <a href="#">
+                <span>成长关爱系统</span>
+                <img src="../images/index/ax.png" alt="">
+            </a>
+            <a href="javascript:void()" class="dlys">
+                <span>登录</span>
+                <img src="../images/index/user.png" alt="">
+            </a>
+        </div>
+    </div>
+
+ <!-- 登录 -->
+ <div id="loginStorage">
+    <div class="box">
+        <img src="../images/index/login.png" alt="">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAADB0lEQVRYR8XZSXLTQBQG4P9lBRQnSFFcQ7JkkHwTQhKmAAEWkHkeYAcEwjyuqOIQlqssW+YCsKUqrNiwgV38KLnsRGl3Sy3Jlr20WurP/2t1t2Sq+d8uMtr7AJ1i8FLFNr9ghJ9aI5hlxiaA34SxCfL84BeA8a6JmflKpVx6OwqjVw9WQFiP9P0jBP4FcCbyJQN81bVLb4pESnBh9wdUbQRzxNgVMIUiFTgmpgkKYVW/tUXgxVEga35rlcFrYt9EuOZY5usOMPzU/GCTgSVVw2GUOwkX9nkELBqpg+sDFoWs+s01Aq3qVOtEgkWUW4VTzRxSYAj16sEGCMv9v5KuO5bxKsuY9BrBOhgraW5GJXDQyCw46RgUk1ElyUw3KmXjpU6SKpzOqhWbYK9zdQfJyDw4rQTzINXp66/3WglmQSpvMqZpp2y80xkaqRJMQgI849qlF7E3V0pcJmB4UsxcNkOgcemSmQGXGRiDlFWOiTDlWOZ73bJG26Uag2IHiiSjzXLhciV4vCxKt0vh4dy4gQAVe8kOEMBN1zb3s5S2d07OEks3umKJbzmW+TwrMjPQ85vbAC0IHbcBjImbASJkRmYCqnBEmOY2zglPZp1yM9PtStl4ljbJ1MCY5KZc2/zQnajFx8fMyFRArxHsgDEvKesRLrLiLIOxIZY7bZLawDS4QSK1gArcIYDpXllVY8trBNIkAZ517dJe0phMBNbqwS4T5oQLaeF651T95hKBwvctJ6YgHWQscBA4DeQd1y49VSWpBA4Slwcpf+xUlJXBUxW79DFp3MQdjym3NMk+YNVvPSTwA3HMDQJ3vMFoLjJoSzIm+5AngEXgkpBEuOtY5pO+zYLnNx8BdF9MjpgmnbLxKU9ZVefWfHmSUWQnwVHgjibzemsBxNt9Kw7hXsUyH5NiIj0cZnJiop4CCWAyfAX8D8DpyEmF4hKSPCDPb/4E6Hy34SERXXYs4/MwxlzSNb16MA/CTqTdd/LqrQsg3gPoLAjzrmV8TbrQMI93/4YIXwn/aVP70n+OfBhghPU19QAAAABJRU5ErkJggg==" class="close-icon">
+        <div class="login_info">
+            <input type="text" id="user" placeholder="手机号注册、登录" style="margin-top: 20px;">
+            <span class="ts1"></span>
+            <input type="password" id="passward" placeholder="密码">
+            <span class="ts1"></span>
+            <input type="submit" name="" id="dl" value="登录">
+            <p style="margin-top: 20px;display: flex;justify-content: space-between;">
+                <span style="color: #7f858a;cursor: pointer;">登录遇到问题？</span>
+                <span style="color: #7f858a;cursor: pointer;">立即注册</span>
+            </p>
+            <span class="ts1" style="margin-top: 20px;display: inline-block;">
+                未注册的手机验证后将自动登录。注册/登录即代表您同意并遵守
+                <i style="color: #7f858a; cursor: pointer;">
+                    《米哈游通行证用户服务协议》                    
+                </i> 
+                <i style="color: #7f858a; cursor: pointer;">
+                    《米哈游通行证用户个人信息及隐私保护政策》
+                </i> 
+            </span>
+           
+        </div>
+    </div>
+</div>
+
+    <!-- 主体部分 -->
+    <div class="frame">
+        <div class="news">
+            <div class="news_content">
+                <div class="news_t">
+                    <ul class="news_t_nr">
+                        <li class="ntnr_li">
+                            <a href="#" class="ntnr_li_lj">
+                                <div class="img_sz">
+                                    <img src="./img/title_tp1.jpg" alt="">
+                                </div>
+                                <div class="new_zt">《原神》EP - 如风如露之思</div>
+                            </a>
+                            <div class="ntnr_li_rq">
+                                <span class="new_date">2023/04/11</span>
+                                <span class="new_lb">
+                                    新闻
+                                </span>
+                            </div>
+                        </li>
+                        <li class="ntnr_li">
+                            <a href="#" class="ntnr_li_lj">
+                                <div class="img_sz">
+                                    <img src="./img/title_tp2.jpg" alt="">
+                                </div>
+                                <div class="new_zt">歧尾骏足，通达万户</div>
+                            </a>
+                            <div class="ntnr_li_rq">
+                                <span class="new_date">2023/04/10</span>
+                                <span class="new_lb">
+                                    新闻
+                                </span>
+                            </div>
+                        </li>
+                        <li class="ntnr_li">
+                            <a href="#" class="ntnr_li_lj">
+                                <div class="img_sz">
+                                    <img src="./img/title_tp3.jpg" alt="">
+                                </div>
+                                <div class="new_zt">迪希雅生日快乐｜你说我今天的妆容很好看？哈哈，谢谢！</div>
+                            </a>
+                            <div class="ntnr_li_rq">
+                                <span class="new_date">2023/04/07</span>
+                                <span class="new_lb">
+                                    新闻
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="news_m">
+                    <div class="nm_t">
+                        <a class="nmt_bt" href="#"><span class="in">最新</span></a>
+                        <a class="nmt_bt" href="#"><span>新闻</span></a>
+                        <a class="nmt_bt" href="#"><span>公告</span></a>
+                        <a class="nmt_bt" href="#"><span>活动</span></a>
+                    </div>
+                    <div class="nm_z">
+                        <ul class="xwnr">
+                           <!--  <li class="lis">
+                                <a href="#" class="xwnr_li">
+                                    <img src="./img/xwlb.jpg" class="">
+                                    <div class="xwnr_li_bt">
+                                        <h3 class="xwnr_bt">小红书《原神》3.6版本笔记征集活动即将开启</h3>
+                                        <div class="xwnr_li_qk">
+                                            <a class="xwnr_rq">2023/04/11</a> 
+                                            <a href="#" class="xw">新闻</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="lis">
+                                <a href="#" class="xwnr_li">
+                                    <img src="./img/xwlb.jpg" class="">
+                                    <div class="xwnr_li_bt">
+                                        <h3 class="xwnr_bt">小红书《原神》3.6版本笔记征集活动即将开启</h3>
+                                        <div class="xwnr_li_qk">
+                                            <a class="xwnr_rq">2023/04/11</a> 
+                                            <a href="#" class="xw">新闻</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="lis">
+                                <a href="#" class="xwnr_li">
+                                    <img src="./img/xwlb.jpg" class="">
+                                    <div class="xwnr_li_bt">
+                                        <h3 class="xwnr_bt">小红书《原神》3.6版本笔记征集活动即将开启</h3>
+                                        <div class="xwnr_li_qk">
+                                            <a class="xwnr_rq">2023/04/11</a> 
+                                            <a href="#" class="xw">新闻</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="lis">
+                                <a href="#" class="xwnr_li">
+                                    <img src="./img/xwlb.jpg" class="">
+                                    <div class="xwnr_li_bt">
+                                        <h3 class="xwnr_bt">小红书《原神》3.6版本笔记征集活动即将开启</h3>
+                                        <div class="xwnr_li_qk">
+                                            <a class="xwnr_rq">2023/04/11</a> 
+                                            <a href="#" class="xw">新闻</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="lis">
+                                <a href="#" class="xwnr_li">
+                                    <img src="./img/xwlb.jpg" class="">
+                                    <div class="xwnr_li_bt">
+                                        <h3 class="xwnr_bt">小红书《原神》3.6版本笔记征集活动即将开启</h3>
+                                        <div class="xwnr_li_qk">
+                                            <a class="xwnr_rq">2023/04/11</a> 
+                                            <a href="#" class="xw">新闻</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li class="li_end">
+                                加载更多
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="footer">
+        <div class="content">
+            <div class="footer-logo">
+                <div class="logoImg">
+                    <img src="../images/index/footer1.png" alt="" class="left">
+                    <span></span>
+                    <img src="../images/index/footer2.png" alt="" class="rigth">
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="footer-link">
+                    <div class="footer-protocol">
+                        <div>
+                            <a href="#">用户协议</a><span>|</span>
+                            <a href="#">隐私政策</a><span>|</span>
+                            <a href="#">儿童隐私政策</a><span>|</span>
+                            <a href="#">自律公约</a><span>|</span>
+                            <a href="#">成长关爱</a><span>|</span>
+                            <a href="#">关于我们</a><span>|</span>
+                            <a href="#">联系我们</a><span>|</span>
+                            <a href="#">加入我们</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-advice">                
+                    <p>
+                        健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+                    </p>                
+                    <p>
+                        <a href="#">沪公网安备31010402001113号</a>
+                        <span>|</span>
+                        <span>增值电信业务经营许可证：沪B2-20190555</span>
+                    </p>
+                    <p>
+                        <a href="#">沪ICP备19018275号-4</a>
+                        <span>|</span>
+                        <a href="#">沪网文〔2022〕1334-052号</a>
+                        <span>|</span>
+                        <a href="#">国新出审【2019】2978号</a>
+                    </p>
+                    <p>
+                        互联网违法不良信息举报邮箱: tousu@service.mihoyo.com 互联网违法不良信息举报电话: 021-60371750 （工作时间：每天10点 - 20点）
+                    </p>
+                    <p>
+                        亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听
+                    </p>
+                    <p>
+                        未成年成长关爱热线：021-60371740 （服务时间：8:00-23:00）
+                    </p>
+                    <p>
+                        <i>© 2020 米哈游版权所有 | 上海米哈游影铁科技有限公司</i>
+                        <span>客服电话：400-666-6312</span>
+                    </p>
+                </div>  
+                <div class="footer-icon">
+                    <a href="#"
+                        style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/shiming_1575020038_4113.png');">
+                    </a>
+                    <a href="#"
+                        style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/jubao_1575020039_5071.png');">
+                    </a>
+                    <a href='#'
+                        style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/202005/youhai_1589857356_1416.png');">
+                    </a>
+                    <a href="#"
+                        
+                        style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/culture_1575020039_5478.png');">
+                    </a>
+                    <a href="#"
+                        style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/e110_1575020039_7486.png');">
+                    </a>
+                    <a
+                        href="#"
+                        style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/zhizhao_1575020039_4362.png');"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="down"></div>
+
+</body>
+
+</html>
